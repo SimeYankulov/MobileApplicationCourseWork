@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:hapticFeedbackEnabled="false"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:autoText="false"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registerbtn"
+        style="@style/Widget.AppCompat.Button"
+
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="143dp"
+        android:background="#00ccff"
+        android:text="Register"
+        android:textColor="#FDFDFD"
+        android:textColorHighlight="#D52222"
+        android:textColorHint="#F3F2F2"
+        android:textColorLink="#F8F8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginbtn"
+        style="@style/Widget.AppCompat.Button"
+
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="143dp"
+        android:background="#00ccff"
+        android:text="Log in"
+        android:textColor="#FDFDFD"
+        android:textColorHighlight="#D52222"
+        android:textColorHint="#F3F2F2"
+        android:textColorLink="#F8F8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+</androidx.constraintlayout.widget.ConstraintLayout>
